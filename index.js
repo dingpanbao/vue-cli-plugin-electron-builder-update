@@ -365,7 +365,7 @@ module.exports = (api, options) => {
           // Copy main process file instead of bundling it
           fs.copySync(
             api.resolve(mainProcessFile),
-            api.resolve(`${outputDir}/index.js`)
+            api.resolve(`${outputDir}/background.js`)
           )
           launchElectron()
         }
@@ -677,7 +677,7 @@ function bundleMain ({
 
   mainConfig.target('electron-main')
   mainConfig
-    .entry(isBuild ? 'background' : 'index')
+    .entry(isBuild ? 'background' : 'background')
     .add(api.resolve(mainProcessFile))
 
   preloadConfig.target('electron-preload')
