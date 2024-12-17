@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-electron-builder-update",
-  "version": "2.1.2",
+  "version": "2.1.5",
   "description": "vue-cli-plugin-electron-builder-update",
   "main": "index.js",
   "types": "index.d.ts",
